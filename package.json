@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "export": "sapper export --basepath stefano-loscalzo --legacy",
     "start": "node __sapper__/build",
-    "validate": "svelte-check --ignore src/node_modules/@sapper"
+    "validate": "svelte-check --ignore src/node_modules/@sapper",
+    "deploy": "npm run export && node ./scripts/gh-pages.js"
+
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "gh-pages": "^3.1.0",
     "polka": "next",
     "sirv": "^1.0.0"
   },
