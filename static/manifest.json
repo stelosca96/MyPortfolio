@@ -1,8 +1,8 @@
 {
-	"background_color": "#ffffff",
+	"background_color": "#ffff00",
 	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"name": "Stefano Loscalzo",
+	"short_name": "Stefano Loscalzo",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
