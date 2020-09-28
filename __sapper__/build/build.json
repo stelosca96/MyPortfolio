@@ -1,0 +1,42 @@
+{
+  "bundler": "rollup",
+  "shimport": "2.0.4",
+  "assets": {
+    "main": "client.a5259f44.js"
+  },
+  "css": {
+    "main": [
+      "client-64435b2b.css"
+    ]
+  },
+  "dependencies": {
+    "index.svelte": [
+      "index.c9daa959.js",
+      "Button.1ecf4486.js",
+      "inject_styles.5607aec6.js",
+      "Button-2611ef0b.css",
+      "index-cca3926e.css"
+    ],
+    "projects/index.svelte": [
+      "index.7f35b4fa.js",
+      "Button.1ecf4486.js",
+      "ProjectModel.c7931b13.js",
+      "inject_styles.5607aec6.js",
+      "Button-2611ef0b.css",
+      "index-81434483.css"
+    ],
+    "projects/[name].svelte": [
+      "[name].a8f78784.js",
+      "ProjectModel.c7931b13.js",
+      "inject_styles.5607aec6.js",
+      "[name]-826290ce.css"
+    ],
+    "about.svelte": [
+      "about.535f9f56.js",
+      "inject_styles.5607aec6.js"
+    ]
+  },
+  "legacy_assets": {
+    "main": "client.a59c7226.js"
+  }
+}

@@ -5,11 +5,11 @@ export default class ProjectModel {
     link = '/';
     linkValue: string;
 
-    constructor(name: string, shortDescription: string, link: string, linkValue: string, description: string = '') {
+    constructor(name: string, shortDescription: string, description: string = '') {
         this.name = name;
         this.shortDescription = shortDescription;
         this.description = description;
-        this.link = link;
-        this.linkValue = linkValue;
+        this.link = `/projects/${name}`;
+        this.linkValue = 'APRI';
     }
 }
