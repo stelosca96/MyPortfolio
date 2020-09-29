@@ -1,0 +1,44 @@
+[
+  {
+    "name": "DamnEat",
+    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "language": "Android",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "WHPSC Sim",
+    "shortDescription": "Simulatore bla bla bla bla bla",
+    "language": "Typescript, Svelte",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "Backup Software",
+    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "language": "C++",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "VirtualLabs",
+    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "language": "Typescript, Angular, Java, SpringBoot",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "TaurusApp",
+    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "language": "Android",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "Policumbent BOB",
+    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "language": "Python",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  },
+  {
+    "name": "Policumbent Server",
+    "shortDescription": "Software di backend per la gestione e la manipolazione dei dati.",
+    "language": "Java, Spring Boot",
+    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+  }
+]
