@@ -1,11 +1,19 @@
 <script>
     import {goto} from "@sapper/app";
     export let value;
+    export let blankPage = false;
     export let link = '/';
+    export let color = '#3F000000';
+
+    function openLink(){
+        if(blankPage)
+            window.open(link,'_blank');
+        else
+            goto(link);
+    }
 </script>
 <style>
     button {
-        background-color: rgba(0, 0, 0, 0.25);
         font-weight: 500;
         line-height: 1.15;
         border: 0;
@@ -27,4 +35,4 @@
 
 
 </style>
-<button on:click={()=>goto(link)}>{value}</button>
+<button style="background-color: {color}" on:click={openLink}>{value}</button>

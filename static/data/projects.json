@@ -1,44 +1,63 @@
 [
   {
     "name": "DamnEat",
-    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "shortDescription": "Progetto realizzato per il corso di Mobile Application Development del Politecnico di Torino, prevedeva la realizzazione di tre app Android differenti per ogni tipo di usufruitore: i consumatori, i ristoratori, e i rider.",
     "language": "Android",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Progetto realizzato per il corso di Mobile Application Development del Politecnico di Torino, prevedeva la realizzazione di tre app Android differenti per ogni tipo di usufruitore: i consumatori, i ristoratori, e i rider.\nOgni app è collegata alle altre tramite l'utilizzo del serivizio Firebase Realtime Database basato su NoSql.\n\n• Il consumatore ha la possibilità di visualizzare la lista dei ristoranti iscritti al servizio e ordinare i suoi piatti preferiti da qualsiasi ristoranti gli aggradi con le funzioni tipiche di una qualsiasi app di food-delivery come filtri, un sistema di ristoranti preferiti e il tracciamento dell'ordine in tempo reale.\n• Il ristorante dall'altro lato può pubblicare le sue specialità rendendole visibili o meno ai clienti in modo da poter creare dei menù sempre diversi per ogni occasione. È inoltre possibile scegliere il rider che più è vicino in quel momento al ristorante, tramite una classica lista o una comoda mappa.\n• Infine il rider ha la possibilità di rendersi disponibile o meno all'assegnazione di un ordine e tramite l'ausilio dell' app apposita può riuscire facilmente a raggiungere i luoghi designati tramite l'integrazione di google maps.\n\nÈ presente inoltre un sistema di recensioni per i ristoranti e per il servizio offerto dalle applicazioni nonchè una pagina di statistiche ad hoc per ogni usufruitore.",
+    "backgroundImg": "damn_eat.png",
+    "demo": "",
+    "github": ""
   },
   {
     "name": "WHPSC Sim",
     "shortDescription": "Simulatore bla bla bla bla bla",
     "language": "Typescript, Svelte",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Simulatore che simula.",
+    "backgroundImg": "whps-sim.png",
+    "demo": "https://www.policumbent.it/whpsc-sim/",
+    "github": "https://github.com/policumbent/WHPSC-Sim"
   },
   {
     "name": "Backup Software",
-    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "shortDescription": "Progetto del corso Programmazione di Sistema del Politecnico di Torino, prevede la realizzazione di due applicazioni in C++17, una lato server e una lato client che gestiscano il backup e il recupero dei file contenuti in una cartella.",
     "language": "C++",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Progetto del corso Programmazione di Sistema del Politecnico di Torino, prevede la realizzazione di due applicazioni in C++17, una lato server e una lato client che gestiscano il backup e il recupero dei file contenuti in una cartella. Per lo sviluppo sono state utilizzate le librerie std::filesystem e la libreria boost asio, per permettere al server di lavorare in maniera asincrona.",
+    "backgroundImg": "terminal.jpg",
+    "demo": "",
+    "github": ""
   },
   {
     "name": "VirtualLabs",
-    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "shortDescription": "Progetto del corso Applicazioni Internet del Politecnico di Torino, prevede la realizzazione di un'applicazione web lato client utilizzando Angular e server creando REST API tramite Spring Boot.",
     "language": "Typescript, Angular, Java, SpringBoot",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Progetto del corso Applicazioni Internet del Politecnico di Torino, prevede la realizzazione di un'applicazione web lato client utilizzando Angular e server creando REST API tramite Spring Boot. Questo progetto è volto a realizzare una applicazione web per favorire la gestione di laboratori\nvirtuali in cui gli studenti di un corso universitario lavorano a gruppi su macchine virtuali che il\ndocente può monitorare e a cui lo stesso docente può partecipare per dare consigli, verificare problematiche o collaborare nello svolgimento di esercizi.",
+    "backgroundImg": "virtual_labs.png"
   },
   {
     "name": "TaurusApp",
-    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "shortDescription": "Semplice applicazione per Android che, collegandosi tramite bluetooth al software di bordo di Taurus, il prototipo del team Policumbent, permette di modificare rapidamente tutte le impostazioni impostazioni.",
     "language": "Android",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Lo sviluppo del software e dell'hardware sul prototipo del team Policumbent, Taurus, negli anni ha portato ad un aumento progressivo della complessità del sistema. Se in Pulsar, il prototipo precedente, un intervento di manutenzione o riparazione poteva risultare banale, su Taurus e TaurusX la difficoltà è notevolmente più alta. Senza accorgimenti anche una semplice calibrazione del cambio potrebbe trasformarsi in un compito dispendioso in tempo e fatica.\nMotivo per cui nel 2019 si è scelto di sviluppare un'interfaccia chiara, immediata e funzionale per interventi immediati e frequenti e che non necessitano di un intervento fisico sull'hardware. Nasce così la Taurus App, una semplice applicazione per Android che, collegandosi tramite bluetooth al software di bordo, permette di modificare rapidamente le impostazioni o attivare ulteriori funzioni come la registrazione video, la calibrazione del powermeter, la calibrazione del cambio o altri piccoli accorgimenti.",
+    "backgroundImg": "taurus_x_app.jpg",
+    "demo": "",
+    "github": ""
   },
   {
     "name": "Policumbent BOB",
-    "shortDescription": "Cibo asporto giallo. GLOVOOOOOOOO",
+    "shortDescription": "Software di bordo e sistema di visione di Taurus, prototipo del team Policumbent, team studentesco del Politecnico di Torino.",
     "language": "Python",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Il primo sistema di visione elettronico targato Policumbent nasce nel 2015 su Pulsar. Qui, in una versione che oggi possiamo definire primitiva,  era presente un solo schermo e il backup consisteva nell'ampio  plexiglass già presente in carena . Da questo primo modello si è passati nel 2017  ad un doppio sistema di visione composto da due schermi indipendenti. Il sistema fece debutto con Taurus alla WHPSC 2017. Durante il biennio 2018-2019 il reparto di elettronica ha dedicato molto tempo allo sviluppo di un'interfaccia che permettesse al ciclista di avere in tempo reale le informazioni principali sulla run. Infatti, sebbene bisogna sempre \"spingere al massimo\" sui pedali, avere una lettura immediata dei dati contribuisce in un certo senso al comfort psicologico dell'atleta. Così si arriva allo stato attuale, dove i nostri ciclisti possono conoscere in diretta i dati riguardanti frequenza cardiaca, velocità, potenza, distanza e tempo. Inoltre grazie al lavoro del reparto di Analisi Dati possiamo riportare a schermo, tramite semplici grafiche, informazioni di velocità e potenza target per ogni punto della run.Per il 2020 è in programma l’integrazione di un modulo GPS e ulteriori sensori per registrare dati utili all'analisi della performance.",
+    "backgroundImg": "schermi.jpg",
+    "demo": "",
+    "github": ""
   },
   {
     "name": "Policumbent Server",
-    "shortDescription": "Software di backend per la gestione e la manipolazione dei dati.",
+    "shortDescription": "Software di backend per la gestione e la manipolazione dei dati del Team Policumbent.",
     "language": "Java, Spring Boot",
-    "description": "Cibo asporto giallo. GLOVOOOOOOOO"
+    "description": "Software di backend per la gestione e la manipolazione dei dati. Software che espone delle REST API accessibili da Taurus, prototipo del Team Policumbent, da stazioni meteo (per raccogliere informazioni su vento e temperatura durante il periodo della competizione), visualizzazione di dati (da parte del pubblico, con un accesso ai dati ristretto e del team, con pieno accesso ai dati).",
+    "backgroundImg": "terminal.jpg",
+    "demo": "",
+    "github": ""
   }
 ]
