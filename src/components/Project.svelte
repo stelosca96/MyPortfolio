@@ -20,10 +20,14 @@
     .content {
         color: white;
         width: 240px;
+        overflow: hidden;
         height: 340px;
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
         padding: 40px 40px;
+    }
+    p {
+        width: 240px;
     }
 
     .right {
