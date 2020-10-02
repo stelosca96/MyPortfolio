@@ -5,11 +5,12 @@
 
 <style>
     .container {
+        white-space: normal;
         display: inline-block;
         margin: 10px;
         position: relative;
         width: 320px;
-        height: 420px;
+        height: 440px;
         overflow: hidden;
         background-color: yellow;
         border-radius: 10%;
@@ -21,13 +22,14 @@
         color: white;
         width: 240px;
         overflow: hidden;
-        height: 340px;
+        height: 360px;
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
         padding: 40px 40px;
     }
     p {
         width: 240px;
+        overflow: hidden;
     }
 
     .right {

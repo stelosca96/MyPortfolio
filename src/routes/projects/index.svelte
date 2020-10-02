@@ -20,7 +20,7 @@
         .content {
             overflow-x: auto;
             white-space: nowrap;
-            height: 450px;
+            height: 500px;
         }
     }
 
