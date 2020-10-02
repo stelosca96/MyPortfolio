@@ -72,16 +72,16 @@
 		<img class="photo" src="{project.backgroundImg}" alt="Photo {project.name}"/>
 		{#if project.github !== ''}
 			<div  class="left">
-				<Button blankPage="true" color="gold" link="{project.github}" value="GITHUB"/>
+				<Button textColor="black"  blankPage="true" color="gold" link="{project.github}" value="GITHUB"/>
 			</div>
 		{/if}
 		{#if project.demo !== ''}
 			<div  class="center">
-				<Button blankPage="true" color="gold" link="{project.demo}" value="DEMO"/>
+				<Button textColor="black" blankPage="true" color="gold" link="{project.demo}" value="DEMO"/>
 			</div>
 		{/if}
 		<div  class="right">
-			<Button color="gold" link="/projects" value="TORNA INDIETRO"/>
+			<Button textColor="black" color="gold" link="/projects" value="TORNA INDIETRO"/>
 		</div>
 	</div>
 </section>

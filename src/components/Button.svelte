@@ -4,6 +4,7 @@
     export let blankPage = false;
     export let link = '/';
     export let color = '#3F000000';
+    export let textColor = 'white';
 
     function openLink(){
         if(blankPage)
@@ -22,7 +23,6 @@
         outline: none;
         border-radius: 20px;
         font-size: 1em;
-        color: white;
         box-shadow: 3px 4px 17px 0 rgba(53, 142, 215, 0.3);
     }
     button:hover {
@@ -35,4 +35,4 @@
 
 
 </style>
-<button style="background-color: {color}" on:click={openLink}>{value}</button>
+<button style="background-color: {color}; color: {textColor}" on:click={openLink}>{value}</button>

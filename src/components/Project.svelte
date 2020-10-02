@@ -40,7 +40,7 @@
         <h1>{project.name}</h1>
         <p>{project.shortDescription}</p>
         <div class="right">
-            <Button color="gold" value="{project.linkValue}" link="{project.link}"/>
+            <Button color="gold" textColor="black" value="{project.linkValue}" link="{project.link}"/>
         </div>
     </div>
 </div>
