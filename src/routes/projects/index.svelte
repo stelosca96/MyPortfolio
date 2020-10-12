@@ -13,9 +13,7 @@
     });
 </script>
 <style>
-    section {
-        padding: 1em 2em;
-    }
+
     @media only screen and (max-device-width: 550px) {
         .content {
             overflow-x: auto;
@@ -25,42 +23,24 @@
     }
 
     @media only screen and (min-device-width: 550px) {
+        .content {
+            display: inline-block;
+            text-align: center;
 
+        }
     }
 
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        background-color: #f5f5f5;
-    }
 
-    ::-webkit-scrollbar {
-        width: 10px;
-        background-color: #f5f5f5;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: #ff3e00;
-        background-image: -webkit-linear-gradient(
-                45deg,
-                rgba(255, 255, 255, 0.2) 25%,
-                transparent 25%,
-                transparent 50%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.2) 75%,
-                transparent 75%,
-                transparent
-        );
-    }
 
 </style>
 
 <svelte:head>
-    <title>My Projects</title>
+    <title>Progetti</title>
 </svelte:head>
 
 <section>
-    <h1>My Projects</h1>
+    <h1 class="title">I miei progetti</h1>
+    <p class="subtitle">Un piccolo elenco dei miei progetti personali, scolastici e di altro genere.</p>
     <div class="content">
         {#each projects as project}
             <Project {project}/>

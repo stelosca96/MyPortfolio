@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
 	import ProjectModel from "../../models/ProjectModel";
+	import showdown from 'showdown';
 
 	export async function preload(page, session) {
 		// the `slug` parameter is available because this file
@@ -15,14 +16,28 @@
 		console.log(name);
 		const project = projects
 				.filter(e => e.name === name)
-				.map(e => new ProjectModel(e.name, e.shortDescription, e.description, e.language, e.backgroundImg, e.demo, e.github))[0];
-		return { project };
-	}</script>
+				.map(e => new ProjectModel(e.name, e.shortDescription, e.code, e.language, e.backgroundImg, e.demo, e.github))[0];
+		let mdDescription: string = 'Work in progress!';
+		try {
+			const res2 = await this.fetch(`data/projects/${project.code}.md`);
+			console.log(res2);
+			if (res2.status === 200)
+				mdDescription = await res2.text();
+		} catch (e) {
+			console.log(e);
+		}
+		const converter = new showdown.Converter();
+		const htmlDescription = converter.makeHtml(mdDescription);
+		return { project, htmlDescription };
+	}
+</script>
 
 <script lang="ts">
 	import Button from "../../components/Button.svelte";
 	export let project: ProjectModel;
+	export let htmlDescription: string;
 	$: console.log(project);
+	$: console.log(htmlDescription);
 </script>
 
 <style>
@@ -58,6 +73,11 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	em {
+		font-weight: bold;
+		font-style: normal;
+		margin-right: 5px;
+	}
 </style>
 
 <svelte:head>
@@ -67,8 +87,8 @@
 <section>
 	<div class="content">
 		<h1>{project.name}</h1>
-		<p>Linguaggi: {project.language}</p>
-		<p>{project.description}</p>
+		<p><em>Linguaggi:</em> {project.language}</p>
+		<div>{@html htmlDescription}</div>
 		<img class="photo" src="{project.backgroundImg}" alt="Photo {project.name}"/>
 		{#if project.github !== ''}
 			<div  class="left">

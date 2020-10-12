@@ -1,7 +1,7 @@
 export default class ProjectModel {
     name: string;
     shortDescription: string;
-    description: string;
+    code: string;
     link = '/';
     github = '';
     demo = '';
@@ -12,7 +12,7 @@ export default class ProjectModel {
     constructor(name: string, shortDescription: string, description: string = '', language: string = '', backgroundImg = 'terminal.jpg', demo = '', github = '') {
         this.name = name;
         this.shortDescription = shortDescription;
-        this.description = description;
+        this.code = description;
         this.link = `/projects/${name}`;
         this.linkValue = 'APRI';
         this.backgroundImg = `img/projects/${backgroundImg}`;

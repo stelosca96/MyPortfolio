@@ -9,6 +9,9 @@
 			font-size: 4em;
 		}
 	}
+	h1 {
+		color: white;
+	}
 
 	.bg_image {
 		position: absolute;
@@ -70,7 +73,7 @@
 	<title>Stefano Loscalzo</title>
 </svelte:head>
 
-<section>
+<div>
 	<div class="bg_image"></div>
 	<div class="bg_filter"></div>
 	<div class="content">
@@ -79,10 +82,10 @@
 			<p>Studente di ingegneria informatica al Politecnico di Torino e bla bla.</p>
 		</div>
 		<div class="buttons">
-			<Button value="Scarica CV" on:click/>
+			<Button value="Scarica CV"  blankPage="{true}" link="data/cv_stefano_loscalzo.pdf"/>
 			<Button value="I miei progetti" link="projects"/>
 			<Button value="Contattami" link="about"/>
 		</div>
 
 	</div>
-</section>
+</div>
