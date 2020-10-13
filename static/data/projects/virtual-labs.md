@@ -1,0 +1,3 @@
+Progetto del corso [Applicazioni Internet](https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=02JGROV&p_a_acc=2020&p_header=S&p_lang=IT) del Politecnico di Torino, prevede la realizzazione di un'applicazione web lato client utilizzando Angular e server creando REST API tramite Spring Boot. Questo progetto è volto a realizzare una applicazione web per favorire la gestione di laboratori virtuali in cui gli studenti di un corso universitario lavorano a gruppi su macchine virtuali che il docente può monitorare e a cui lo stesso docente può partecipare per dare consigli, verificare problematiche o collaborare nello svolgimento di esercizi.
+
+Presto disponibili i link al progetto.

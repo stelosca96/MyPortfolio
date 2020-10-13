@@ -2,6 +2,9 @@
 	import showdown from 'showdown';
 	import { onMount } from 'svelte'
 	import { Container, Row, Col } from 'sveltestrap/src'
+	import Icon from 'svelte-awesome/components/Icon.svelte'
+	import { twitter, facebook, instagram, mailForward, linkedin, github } from 'svelte-awesome/icons';
+
 	let htmlText = '';
 	onMount(() => 	{
 		const converter = new showdown.Converter();
@@ -54,6 +57,9 @@
 
 	.social a {
 		width: 135px;
+	}
+	Icon {
+		margin-right: 10px;
 	}
 </style>
 <svelte:head>
@@ -215,61 +221,61 @@
 				<h2 class="subtitle text_right">Contattami</h2>
 				<Row>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('mailto:stefano.loscalzo@gmail.com','_blank')} class="social">
 							<a class="button is-medium is-gitlab">
     					<span class="icon">
-      						<i class="fab fa-mail-bulk"></i>
-    					</span>
+							<Icon data={mailForward}/>
+						</span>
 								<span>Email</span>
 							</a>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('https://github.com/stelosca96','_blank')} class="social">
 							<a class="button is-medium is-github">
     					<span class="icon">
-      						<i class="fab fa-github"></i>
-    					</span>
+							<Icon data={github}/>
+						</span>
 								<span>GitHub</span>
 							</a>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('https://www.linkedin.com/in/stefano-loscalzo/','_blank')} class="social">
 							<a class="button is-medium is-linkedin">
-    					<span class="icon">
-      						<i class="fab fa-linkedin"></i>
-    					</span>
+  						<span class="icon">
+							<Icon data={linkedin}/>
+						</span>
 								<span>Linkedin</span>
 							</a>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('https://www.facebook.com/ste.sid','_blank')} class="social">
 							<a class="button is-medium is-facebook">
-    					<span class="icon">
-      						<i class="fab fa-facebook"></i>
-    					</span>
+						<span class="icon">
+							<Icon data={facebook}/>
+						</span>
 								<span>Facebook</span>
 							</a>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('https://twitter.com/SteLosca96','_blank')} class="social">
 							<a class="button is-medium is-twitter">
-    					<span class="icon">
-      						<i class="fab fa-twitter"></i>
-    					</span>
+						<span class="icon">
+							<Icon data={twitter}/>
+						</span>
 								<span>Twitter</span>
 							</a>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div class="social">
+						<div on:click={() => window.open('https://www.instagram.com/stelosca96/','_blank')} class="social">
 							<a class="button is-medium is-instagram">
     					<span class="icon">
-      						<i class="fab fa-instagram"></i>
-    					</span>
+							<Icon data={instagram}/>
+						</span>
 								<span>Instagram</span>
 							</a>
 						</div>

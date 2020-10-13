@@ -60,6 +60,9 @@ code {
 	);
 }
 
+html {
+	overflow-y: hidden;
+}
 section {
 	padding: 1em 2em;
 }

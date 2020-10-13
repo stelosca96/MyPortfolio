@@ -8,8 +8,12 @@
 		h1 {
 			font-size: 4em;
 		}
+		.text:hover h1 {
+			font-size: 5em;
+			transition-duration: 200ms
+		}
 	}
-	h1 {
+	h1, p {
 		color: white;
 	}
 
@@ -35,7 +39,6 @@
 	.content {
 		/*padding-top: calc(5vw + 3rem);*/
 		text-align: left;
-		font-family: "Work Sans", Helvetica, sans-serif;
 		color: white;
 		position: absolute;
 		top: 0;
@@ -45,19 +48,8 @@
 		/*max-width: 56em;*/
 	}
 	.text {
-		margin-top: 3rem;
+		margin-top: 10rem;
 		padding: 5em;
-	}
-	.text:hover h1 {
-		font-size: 5em;
-		transition-duration: 200ms
-	}
-	section {
-		width: 100%;
-	}
-	h1 {
-		/*margin: 10px 0;*/
-		/*font-size: 400%;*/
 	}
 	.buttons {
 		position: absolute;
@@ -78,8 +70,8 @@
 	<div class="bg_filter"></div>
 	<div class="content">
 		<div class="text">
-			<h1>Ciao, sono Stefano Loscalzo</h1>
-			<p>Studente di ingegneria informatica al Politecnico di Torino e bla bla.</p>
+			<h1 class="title">Ciao, sono Stefano Loscalzo</h1>
+			<p class="subtitle">Studente di ingegneria informatica al Politecnico di Torino, appassionato di informatica, tecnologia in generale e di ciclismo.</p>
 		</div>
 		<div class="buttons">
 			<Button value="Scarica CV"  blankPage="{true}" link="data/cv_stefano_loscalzo.pdf"/>
