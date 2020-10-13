@@ -4,6 +4,10 @@
 
 </script>
 <style>
+	.text {
+		margin-top: 1rem;
+		padding: 3em;
+	}
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
@@ -11,6 +15,10 @@
 		.text:hover h1 {
 			font-size: 5em;
 			transition-duration: 200ms
+		}
+		.text {
+			margin-top: 10rem;
+			padding: 5em;
 		}
 	}
 	h1, p {
@@ -47,10 +55,7 @@
 		/*background-color: #1e2029;*/
 		/*max-width: 56em;*/
 	}
-	.text {
-		margin-top: 10rem;
-		padding: 5em;
-	}
+
 	.buttons {
 		position: absolute;
 		top: auto;
