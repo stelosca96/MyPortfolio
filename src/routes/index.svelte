@@ -29,6 +29,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
+		/*todo: alleggerire immagine*/
 		background-image: url("/img/IMGP6768.jpg");
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */

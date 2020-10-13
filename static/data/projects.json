@@ -2,7 +2,7 @@
   {
     "name": "WHPSC Sim",
     "shortDescription": "Applicazione Web e Standalone per lo svolgimento del WHPSC (World Human Powered Speed Challenge) durante il periodo del Covid19.",
-    "language": "Typescript, Svelte",
+    "language": "Typescript, Svelte, Electron",
     "code": "whpsc-sim",
     "backgroundImg": "whpsc-sim.png",
     "demo": "https://www.policumbent.it/whpsc-sim/",
