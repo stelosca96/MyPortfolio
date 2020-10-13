@@ -61,23 +61,25 @@
 	Icon {
 		margin-right: 10px;
 	}
+	#row {
+		width:100%
+	}
 </style>
 <svelte:head>
 	<title>About</title>
 </svelte:head>
-<div>
 	<!--	<h1>About me</h1>-->
 	<Container fluid>
-		<Row>
-			<Col lg="3">
+		<div id="row" class="row">
+			<Col xs="12" lg="3">
 				<Row>
-					<Col sm="5" lg="12">
-						<div class="profile">
+					<Col xs="12" sm="5" lg="12">
+					<div class="profile">
 							<h1 class="title">STEFANO LOSCALZO</h1>
 							<img src="img/foto_profilo.jpg" alt="Foto Stefano Loscalzo"/>
 						</div>
 					</Col>
-					<Col sm="7" lg="12">
+					<Col xs="12" sm="7" lg="12">
 						<h2 class="subtitle">Informazioni personali</h2>
 						<Row>
 							<Col sm="6">
@@ -88,66 +90,66 @@
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Età: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>24</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Luogo di nascita: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>Chieri(TO)</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Cittadinanza: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>Italiana</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Recapito: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>Via Tetto Nuovo 10c, 10025, Pino Torinese (TO)</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Patente di guida: : </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>A2/B Automunito</span>
 							</Col>
 						</Row>
 						<h2 class="subtitle">Competenze linguistiche</h2>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Lingua madre: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>Italiano</span>
 							</Col>
 						</Row>
 						<Row>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span class="study_subtitle">Lingua inglese: </span>
 							</Col>
-							<Col sm="6">
+							<Col xs="12" sm="6">
 								<span>IELTS 6.5, British Council, Livello europeo B2</span>
 							</Col>
 						</Row>
 					</Col>
 				</Row>
 			</Col>
-			<Col lg="7">
+			<Col xs="12" lg="7">
 				<h2 class="subtitle">Esperienze lavorative</h2>
 				<Row>
 					<Col sm="5">
@@ -221,71 +223,67 @@
 				<h2 class="subtitle text_right">Contattami</h2>
 				<Row>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('mailto:stefano.loscalzo@gmail.com','_blank')} class="social">
-							<a class="button is-medium is-gitlab">
+						<div on:click={() => window.open('mailto:stefano.loscalzo@gmail.com','_blank')}>
+							<div class="social button is-medium is-gitlab">
     					<span class="icon">
 							<Icon data={mailForward}/>
 						</span>
 								<span>Email</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('https://github.com/stelosca96','_blank')} class="social">
-							<a class="button is-medium is-github">
+						<div on:click={() => window.open('https://github.com/stelosca96','_blank')}>
+							<div class="social button is-medium is-github">
     					<span class="icon">
 							<Icon data={github}/>
 						</span>
 								<span>GitHub</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('https://www.linkedin.com/in/stefano-loscalzo/','_blank')} class="social">
-							<a class="button is-medium is-linkedin">
+						<div on:click={() => window.open('https://www.linkedin.com/in/stefano-loscalzo/','_blank')}>
+							<div class="social button is-medium is-linkedin">
   						<span class="icon">
 							<Icon data={linkedin}/>
 						</span>
 								<span>Linkedin</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('https://www.facebook.com/ste.sid','_blank')} class="social">
-							<a class="button is-medium is-facebook">
+						<div on:click={() => window.open('https://www.facebook.com/ste.sid','_blank')}>
+							<div class="social button is-medium is-facebook">
 						<span class="icon">
 							<Icon data={facebook}/>
 						</span>
 								<span>Facebook</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('https://twitter.com/SteLosca96','_blank')} class="social">
-							<a class="button is-medium is-twitter">
+						<div on:click={() => window.open('https://twitter.com/SteLosca96','_blank')}>
+							<div class="social button is-medium is-twitter">
 						<span class="icon">
 							<Icon data={twitter}/>
 						</span>
 								<span>Twitter</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 					<Col sm="4" md="2" lg="12">
-						<div on:click={() => window.open('https://www.instagram.com/stelosca96/','_blank')} class="social">
-							<a class="button is-medium is-instagram">
+						<div on:click={() => window.open('https://www.instagram.com/stelosca96/','_blank')}>
+							<div class="social button is-medium is-instagram">
     					<span class="icon">
 							<Icon data={instagram}/>
 						</span>
 								<span>Instagram</span>
-							</a>
+							</div>
 						</div>
 					</Col>
 
 				</Row>
 			</Col>
-		</Row>
+		</div>
 	</Container>
-
-
-</div>
-

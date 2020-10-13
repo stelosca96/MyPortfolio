@@ -41,16 +41,14 @@
 </script>
 
 <style>
-	section {
-		padding: 1em 2em;
-	}
 	section h1 {
 		text-align: center;
 	}
 	h1 {
 		font-size: 3em;
 	}
-	.photo {
+	#photo {
+		margin-top: 1em;
 		width: calc(100% - 2em);
 		height: calc(100vh - 400px);
 		/*margin: 2em;*/
@@ -89,7 +87,7 @@
 		<h1>{project.name}</h1>
 		<p><em>Linguaggi:</em> {project.language}</p>
 		<div>{@html htmlDescription}</div>
-		<img class="photo" src="{project.backgroundImg}" alt="Photo {project.name}"/>
+		<img id="photo" src="{project.backgroundImg}" alt="Photo {project.name}"/>
 		{#if project.github !== ''}
 			<div  class="left">
 				<Button textColor="black"  blankPage="true" color="gold" link="{project.github}" value="GITHUB"/>
