@@ -207,7 +207,7 @@
 					<Col sm="7">
 						<span class="study_title">Liceo Scientifico, opzione Scienze Applicate</span>
 						<span class="study_subtitle">Liceo Scientifico Statale Piero Gobetti , TORINO (TO)</span>
-						<span>Voto Diploma: <em>90/110</em></span>
+						<span>Voto Diploma: <em>90/100</em></span>
 						<span>Tipo Diploma: diploma italiano</span>
 						<span>Tipo Scuola: statale</span>
 					</Col>
