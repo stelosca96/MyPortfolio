@@ -3,7 +3,7 @@
 	"theme_color": "#333333",
 	"name": "Stefano Loscalzo",
 	"short_name": "Stefano Loscalzo",
-	"display": "standalone",
+	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
 		{
